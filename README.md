@@ -1,6 +1,7 @@
 # MeditationUI-Compose
 
-Jetpack Compose Implementation of Home page of Meditation UI from Dribble: https://dribbble.com/shots/15822493-Meditation-Mobile-App
+Jetpack Compose Implementation of Home page of Meditation UI from Dribble.</br>
+Dribble Link: https://dribbble.com/shots/15822493-Meditation-Mobile-App </br>
 
 ## Sample Screenshot
 
