@@ -341,7 +341,9 @@ private fun ChipSection() {
             ChipItem(
                 selectedChipIndex = selectedChipIndex,
                 currentChipIndex = it
-            )
+            ) {
+                selectedChipIndex = it
+            }
         }
     }
 }
@@ -349,9 +351,9 @@ private fun ChipSection() {
 @Composable
 private fun ChipItem(
     selectedChipIndex: Int,
-    currentChipIndex: Int
+    currentChipIndex: Int,
+    onChipClick: () -> Unit
 ) {
-    var selectedChipIndex1 = selectedChipIndex
     Box(
         modifier = Modifier
             .padding(
@@ -359,12 +361,10 @@ private fun ChipItem(
                 top = 15.dp,
                 bottom = 15.dp
             )
-            .clickable {
-                selectedChipIndex1 = currentChipIndex
-            }
+            .clickable(onClick = onChipClick)
             .clip(RoundedCornerShape(10.dp))
             .background(
-                if (currentChipIndex == selectedChipIndex1) {
+                if (currentChipIndex == selectedChipIndex) {
                     ButtonBlue
                 } else {
                     DarkerButtonBlue
