@@ -42,4 +42,27 @@ object DummyData {
             Beige3
         )
     )
+
+    var bottomMenuContents: List<BottomMenuContent> = listOf(
+        BottomMenuContent(
+            title = "Home",
+            iconId = R.drawable.ic_home
+        ),
+        BottomMenuContent(
+            title = "Meditate",
+            iconId = R.drawable.ic_bubble
+        ),
+        BottomMenuContent(
+            title = "Sleep",
+            iconId = R.drawable.ic_moon
+        ),
+        BottomMenuContent(
+            title = "Music",
+            iconId = R.drawable.ic_music
+        ),
+        BottomMenuContent(
+            title = "Profile",
+            iconId = R.drawable.ic_profile
+        )
+    )
 }
